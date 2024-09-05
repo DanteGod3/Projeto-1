@@ -28,7 +28,8 @@ header .container {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
@@ -43,7 +44,8 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a:focus {
     color: #cddc39;
 }
 
@@ -84,9 +86,11 @@ section p {
 a {
     color: #00796b;
     text-decoration: none;
+    transition: text-decoration 0.3s ease;
 }
 
-a:hover {
+a:hover,
+a:focus {
     text-decoration: underline;
 }
 
