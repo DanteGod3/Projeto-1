@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -7,24 +6,19 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f8ff;
     color: #333;
 }
 
 header {
-    background-color: #00796b;
+    background-color: #003366;
     color: white;
-    padding: 1em 0;
+    padding: 20px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
-header .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+header h1 {
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -34,99 +28,66 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-    color: #cddc39;
-}
-
-.hero {
-    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-section h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #00796b;
-}
-
-section p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-a {
-    color: #00796b;
-    text-decoration: none;
-    transition: text-decoration 0.3s ease;
-}
-
-a:hover,
-a:focus {
+nav ul li a:hover {
     text-decoration: underline;
 }
 
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #e6f7ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004080;
+}
+
 footer {
-    background-color: #00796b;
+    background-color: #003366;
     color: white;
     text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
+    padding: 10px 0;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    nav ul {
-        text-align: center;
-        padding-top: 10px;
-    }
+label, input, textarea {
+    margin-bottom: 10px;
+}
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .hero h2 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
